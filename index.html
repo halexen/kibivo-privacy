@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIBIVO — Politique de confidentialité</title>
+  <style>
+    :root {
+      --primary: #085041;
+      --primary-light: #E1F5EE;
+      --accent: #1D9E75;
+      --accent-light: #5DCAA5;
+      --gray-50: #F8F9FA;
+      --gray-100: #F1EFE8;
+      --gray-400: #888780;
+      --gray-600: #5F5E5A;
+      --gray-800: #2C2C2A;
+      --border: #E0E0DC;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--gray-100);
+      color: var(--gray-800);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    header {
+      background: var(--primary);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px; height: 56px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 14px;
+      font-size: 24px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    header p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+    .lang-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+    .lang-btn {
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.4);
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .lang-btn.active {
+      background: rgba(255,255,255,0.2);
+      border-color: white;
+      color: white;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+    .update-date {
+      font-size: 13px;
+      color: var(--gray-400);
+      margin-bottom: 28px;
+      padding: 10px 14px;
+      background: var(--white);
+      border-radius: 8px;
+      border: 0.5px solid var(--border);
+      display: inline-block;
+    }
+    .section {
+      background: var(--white);
+      border-radius: 12px;
+      border: 0.5px solid var(--border);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .section-icon {
+      width: 36px; height: 36px;
+      background: var(--primary-light);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .section p {
+      font-size: 14px;
+      color: var(--gray-600);
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul {
+      padding-left: 18px;
+      margin: 8px 0;
+    }
+    .section ul li {
+      font-size: 14px;
+      color: var(--gray-600);
+      margin-bottom: 6px;
+      line-height: 1.6;
+    }
+    .highlight {
+      background: var(--primary-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+      margin: 10px 0;
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .contact-box {
+      background: var(--primary);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 8px;
+    }
+    .contact-box p {
+      color: rgba(255,255,255,0.85) !important;
+      font-size: 14px;
+    }
+    .contact-box a {
+      color: var(--accent-light);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: var(--gray-400);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">K</div>
+  <h1>KIBIVO</h1>
+  <p>Bilan Diagnostique Kinésithérapique IA</p>
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('fr')">🇫🇷 FR</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
+    <button class="lang-btn" onclick="setLang('es')">🇪🇸 ES</button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- FRANÇAIS -->
+  <div class="lang-section active" id="lang-fr">
+    <p class="update-date">Dernière mise à jour : 15 mai 2026</p>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Introduction</h2>
+      </div>
+      <p>KIBIVO est une application de bilan diagnostique kinésithérapique assistée par intelligence artificielle. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+      <div class="highlight">KIBIVO est destiné aux professionnels de santé (kinésithérapeutes). Les données patients sont saisies et gérées sous la responsabilité du professionnel de santé utilisateur.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📦</div>
+        <h2>Données collectées</h2>
+      </div>
+      <p><strong>Données du professionnel :</strong></p>
+      <ul>
+        <li>Adresse email et mot de passe (authentification)</li>
+        <li>Nom complet (profil)</li>
+      </ul>
+      <p><strong>Données patients saisies par le professionnel :</strong></p>
+      <ul>
+        <li>Nom, âge, profession, loisirs</li>
+        <li>Données de santé : bilans cliniques, EVA, diagnostics, plans de traitement</li>
+        <li>Enregistrements audio temporaires pour la dictée vocale (non stockés)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🎯</div>
+        <h2>Utilisation des données</h2>
+      </div>
+      <ul>
+        <li>Authentification et gestion du compte professionnel</li>
+        <li>Stockage et synchronisation des bilans kinésithérapiques</li>
+        <li>Analyse par IA (Claude d'Anthropic) pour remplissage automatique des bilans</li>
+        <li>Génération et export de documents PDF</li>
+        <li>Envoi de notifications de rappel</li>
+      </ul>
+      <div class="highlight">Les enregistrements audio sont transmis temporairement au service de transcription (OpenAI Whisper) et ne sont jamais stockés de façon permanente.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🤝</div>
+        <h2>Partage des données</h2>
+      </div>
+      <p>Vos données peuvent être partagées avec :</p>
+      <ul>
+        <li><strong>Supabase</strong> — hébergement de la base de données (UE disponible)</li>
+        <li><strong>Anthropic (Claude)</strong> — analyse IA des bilans dictés</li>
+        <li><strong>OpenAI (Whisper)</strong> — transcription audio (données non conservées)</li>
+      </ul>
+      <p>Nous ne vendons jamais vos données à des tiers.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>Sécurité</h2>
+      </div>
+      <ul>
+        <li>Authentification sécurisée via Supabase Auth</li>
+        <li>Chiffrement des données en transit (HTTPS/TLS)</li>
+        <li>Isolation des données par utilisateur (Row Level Security)</li>
+        <li>Sauvegarde locale automatique sur l'appareil</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <h2>Vos droits (RGPD)</h2>
+      </div>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Accès</strong> — consulter toutes vos données</li>
+        <li><strong>Rectification</strong> — corriger vos données</li>
+        <li><strong>Suppression</strong> — demander la suppression de votre compte</li>
+        <li><strong>Portabilité</strong> — exporter vos données (fonction intégrée dans Réglages)</li>
+        <li><strong>Opposition</strong> — vous opposer au traitement</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📅</div>
+        <h2>Conservation des données</h2>
+      </div>
+      <p>Les données sont conservées pendant la durée d'utilisation du compte. En cas de suppression du compte, les données sont supprimées dans un délai de 30 jours. Les bilans exportés localement restent sous la responsabilité du professionnel.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">✉️</div>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-box">
+        <p>Pour toute question relative à la protection de vos données :</p>
+        <p><a href="mailto:contact@trouve-app.com">contact@trouve-app.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="lang-section" id="lang-en">
+    <p class="update-date">Last updated: May 15, 2026</p>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Introduction</h2>
+      </div>
+      <p>KIBIVO is an AI-assisted physiotherapy diagnostic assessment application. This privacy policy describes how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation (GDPR).</p>
+      <div class="highlight">KIBIVO is intended for healthcare professionals (physiotherapists). Patient data is entered and managed under the responsibility of the healthcare professional user.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📦</div>
+        <h2>Data collected</h2>
+      </div>
+      <p><strong>Professional data:</strong></p>
+      <ul>
+        <li>Email address and password (authentication)</li>
+        <li>Full name (profile)</li>
+      </ul>
+      <p><strong>Patient data entered by the professional:</strong></p>
+      <ul>
+        <li>Name, age, occupation, hobbies</li>
+        <li>Health data: clinical assessments, VAS scores, diagnoses, treatment plans</li>
+        <li>Temporary audio recordings for voice dictation (not stored)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🎯</div>
+        <h2>Use of data</h2>
+      </div>
+      <ul>
+        <li>Authentication and professional account management</li>
+        <li>Storage and synchronization of physiotherapy assessments</li>
+        <li>AI analysis (Anthropic's Claude) for automatic assessment completion</li>
+        <li>PDF document generation and export</li>
+        <li>Sending reminder notifications</li>
+      </ul>
+      <div class="highlight">Audio recordings are temporarily transmitted to the transcription service (OpenAI Whisper) and are never permanently stored.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🤝</div>
+        <h2>Data sharing</h2>
+      </div>
+      <p>Your data may be shared with:</p>
+      <ul>
+        <li><strong>Supabase</strong> — database hosting (EU available)</li>
+        <li><strong>Anthropic (Claude)</strong> — AI analysis of dictated assessments</li>
+        <li><strong>OpenAI (Whisper)</strong> — audio transcription (data not retained)</li>
+      </ul>
+      <p>We never sell your data to third parties.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>Security</h2>
+      </div>
+      <ul>
+        <li>Secure authentication via Supabase Auth</li>
+        <li>Data encryption in transit (HTTPS/TLS)</li>
+        <li>Per-user data isolation (Row Level Security)</li>
+        <li>Automatic local backup on device</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <h2>Your rights (GDPR)</h2>
+      </div>
+      <p>Under GDPR, you have the following rights:</p>
+      <ul>
+        <li><strong>Access</strong> — view all your data</li>
+        <li><strong>Rectification</strong> — correct your data</li>
+        <li><strong>Erasure</strong> — request deletion of your account</li>
+        <li><strong>Portability</strong> — export your data (built-in function in Settings)</li>
+        <li><strong>Objection</strong> — object to processing</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📅</div>
+        <h2>Data retention</h2>
+      </div>
+      <p>Data is retained for the duration of account use. Upon account deletion, data is deleted within 30 days. Locally exported assessments remain the responsibility of the professional.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">✉️</div>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-box">
+        <p>For any questions regarding the protection of your data:</p>
+        <p><a href="mailto:contact@trouve-app.com">contact@trouve-app.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div class="lang-section" id="lang-es">
+    <p class="update-date">Última actualización: 15 de mayo de 2026</p>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>Introducción</h2>
+      </div>
+      <p>KIBIVO es una aplicación de evaluación diagnóstica fisioterapéutica asistida por inteligencia artificial. Esta política de privacidad describe cómo recopilamos, usamos y protegemos sus datos personales de conformidad con el Reglamento General de Protección de Datos (RGPD).</p>
+      <div class="highlight">KIBIVO está destinado a profesionales sanitarios (fisioterapeutas). Los datos de los pacientes son introducidos y gestionados bajo la responsabilidad del profesional sanitario usuario.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📦</div>
+        <h2>Datos recopilados</h2>
+      </div>
+      <p><strong>Datos del profesional:</strong></p>
+      <ul>
+        <li>Dirección de correo electrónico y contraseña (autenticación)</li>
+        <li>Nombre completo (perfil)</li>
+      </ul>
+      <p><strong>Datos de pacientes introducidos por el profesional:</strong></p>
+      <ul>
+        <li>Nombre, edad, profesión, aficiones</li>
+        <li>Datos de salud: evaluaciones clínicas, EVA, diagnósticos, planes de tratamiento</li>
+        <li>Grabaciones de audio temporales para dictado por voz (no almacenadas)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🎯</div>
+        <h2>Uso de los datos</h2>
+      </div>
+      <ul>
+        <li>Autenticación y gestión de la cuenta profesional</li>
+        <li>Almacenamiento y sincronización de evaluaciones fisioterapéuticas</li>
+        <li>Análisis por IA (Claude de Anthropic) para completado automático de evaluaciones</li>
+        <li>Generación y exportación de documentos PDF</li>
+        <li>Envío de notificaciones de recordatorio</li>
+      </ul>
+      <div class="highlight">Las grabaciones de audio se transmiten temporalmente al servicio de transcripción (OpenAI Whisper) y nunca se almacenan de forma permanente.</div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🤝</div>
+        <h2>Compartición de datos</h2>
+      </div>
+      <p>Sus datos pueden compartirse con:</p>
+      <ul>
+        <li><strong>Supabase</strong> — alojamiento de base de datos (UE disponible)</li>
+        <li><strong>Anthropic (Claude)</strong> — análisis IA de evaluaciones dictadas</li>
+        <li><strong>OpenAI (Whisper)</strong> — transcripción de audio (datos no conservados)</li>
+      </ul>
+      <p>Nunca vendemos sus datos a terceros.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>Seguridad</h2>
+      </div>
+      <ul>
+        <li>Autenticación segura mediante Supabase Auth</li>
+        <li>Cifrado de datos en tránsito (HTTPS/TLS)</li>
+        <li>Aislamiento de datos por usuario (Row Level Security)</li>
+        <li>Copia de seguridad local automática en el dispositivo</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚖️</div>
+        <h2>Sus derechos (RGPD)</h2>
+      </div>
+      <p>De conformidad con el RGPD, usted dispone de los siguientes derechos:</p>
+      <ul>
+        <li><strong>Acceso</strong> — consultar todos sus datos</li>
+        <li><strong>Rectificación</strong> — corregir sus datos</li>
+        <li><strong>Supresión</strong> — solicitar la eliminación de su cuenta</li>
+        <li><strong>Portabilidad</strong> — exportar sus datos (función integrada en Ajustes)</li>
+        <li><strong>Oposición</strong> — oponerse al tratamiento</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📅</div>
+        <h2>Conservación de datos</h2>
+      </div>
+      <p>Los datos se conservan durante el período de uso de la cuenta. En caso de eliminación de la cuenta, los datos se eliminan en un plazo de 30 días. Las evaluaciones exportadas localmente siguen siendo responsabilidad del profesional.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">✉️</div>
+        <h2>Contacto</h2>
+      </div>
+      <div class="contact-box">
+        <p>Para cualquier pregunta sobre la protección de sus datos:</p>
+        <p><a href="mailto:contact@trouve-app.com">contact@trouve-app.com</a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 KIBIVO — Tous droits réservés / All rights reserved / Todos los derechos reservados</p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('lang-' + lang).classList.add('active');
+  event.target.classList.add('active');
+  document.documentElement.lang = lang;
+}
+</script>
+
+</body>
+</html>
